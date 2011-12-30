@@ -1,0 +1,28 @@
+{
+  "author": "Mikkel Hoegh <mikkel@hoegh.org> (http://mikkel.hoegh.org/)",
+  "name": "ardon",
+  "description": "A simple task board app built with Backbone, jQuery UI, Node.js, etc.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/revealit/ardon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/revealit/ardon.git"
+  },
+  "main": "./index",
+  "bin": "./bin/ardon",
+  "engines": {
+    "node": "~0.6.0"
+  },
+  "dependencies": {
+    "flatiron": "~0.1.6"
+  },
+  "devDependencies": {
+    "vows": "~0.5.11"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
