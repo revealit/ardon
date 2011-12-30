@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+/**
+ * ardon [options]
+ *
+ * Launch the ardon server
+ */
+"use strict";
+
+var Ardon = require('..'),
+    nconf = require('nconf');
+
+if (require.main === module) {
+  nconf.argv()
+       .env()
+       .file({ file: '../config.json' })
+       .defaults({
+          http: {
+            server: {
+              port: 7000
+            }
+          }
+        });
+
+  Ardon.app.start(nconf.get('http:server:port'));
+  Ardon.app.log.info('Server listening at port ' + nconf.get('http:server:port'));
+}
+
