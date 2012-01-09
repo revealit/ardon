@@ -1,5 +1,5 @@
 /*!
- * Copyright 2011 Reveal IT.
+ * Copyright 2012 Reveal IT.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -10,6 +10,7 @@
 "use strict";
 
 module.exports = {
-  app: require('./lib/app')
+  app: require('./lib/app'),
+  configuration: require('./lib/configuration')
 };
 
