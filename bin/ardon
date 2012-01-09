@@ -9,8 +9,14 @@
 var Ardon = require('..'),
     flatiron = require('flatiron'),
     path = require('path'),
+    pkginfo = require('pkginfo'),
     cliApp = flatiron.createApp(),
     webApp = flatiron.app;
+
+// Get version from package.json and set it on the app objects.
+require('pkginfo')(module, 'version');
+cliApp.version = exports.version;
+webApp.version = exports.version;
 
 var actions = {
   runserver: 'Runs the Ardon web server.'
