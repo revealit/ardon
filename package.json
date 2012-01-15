@@ -11,12 +11,15 @@
   "main": "./index",
   "bin": "./bin/ardon",
   "engines": {
-    "node": "~0.6.0"
+    "node" : "0.4 || 0.6"
   },
   "dependencies": {
+    "async": "~0.1.15",
     "flatiron": "~0.1.6",
     "nconf": "~0.5.0",
+    "pg": "~0.6.9",
     "pkginfo": "~0.2.3",
+    "underscore": "~1.2.3",
     "union": "~0.1.7"
   },
   "devDependencies": {

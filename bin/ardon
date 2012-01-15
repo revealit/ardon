@@ -19,6 +19,7 @@ cliApp.version = exports.version;
 webApp.version = exports.version;
 
 var actions = {
+  migrate: 'Runs the migration scripts for configuring and updating the Ardon data store.',
   runserver: 'Runs the Ardon web server.'
 };
 
