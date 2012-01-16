@@ -23,6 +23,7 @@
     "union": "~0.1.7"
   },
   "devDependencies": {
+    "forever": "~0.8.3",
     "vows": "~0.5.11"
   },
   "licenses": [

@@ -9,10 +9,10 @@ Development
 -----------
 
 When working with the [Ardon][] source code, you might want to use
-[supervisor][] to automatically reload your Ardon source code whenever
-it changes:
+[forever][] to automatically reload your Ardon source code whenever
+it changes. Run this command from the root of the project:
 
-    supervisor bin/ardon
+    ./node_modules/.bin/forever -w start bin/ardon runserver
 
 
 Configuration
@@ -35,7 +35,7 @@ content to match your database settings.
 
 
 [Ardon]: https://github.com/revealit/ardon/
-[supervisor]: https://github.com/isaacs/node-supervisor
+[forever]: https://github.com/nodejitsu/forever
 [nconf]: https://github.com/flatiron/nconf
 [PostgreSQL]: http://www.postgresql.org/
 
