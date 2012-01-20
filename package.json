@@ -27,6 +27,9 @@
     "forever": "~0.8.3",
     "vows": "~0.5.11"
   },
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
   "licenses": [
     {
       "type": "Apache 2.0",
