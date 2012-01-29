@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+
+  <title>Ardon</title>
+
+  <% _.each(css, function (code) { %>
+  <style><%= code %></style>
+  <% }); %>
+
+  <% _.each(script, function (code) { %>
+  <script><%= code %></script>
+  <% }); %>
+</head>
+<body>
+  <%= content %>
+</body>
+</html>
+

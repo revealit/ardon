@@ -1,0 +1,18 @@
+<script type="text/template" id="tmpl-main">
+  <div id="header">
+    <h1>Ardon</h1>
+  </div>
+  <div id="content">
+  </div>
+</script>
+
+<script type="text/template" id="tmpl-board-list">
+  <h2>Boards</h2>
+
+  <ul class="board-list">
+    <% boards.each(function (board) { %>
+    <li><a href="#board/<%= board.id %>"><%- board.get('name') %></a></li>
+    <% }); %>
+  </ul>
+</script>
+
