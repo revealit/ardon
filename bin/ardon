@@ -29,7 +29,7 @@ cliApp.use(flatiron.plugins.cli, {
     'ardon',
     '',
   ].concat(Object.keys(actions).map(function(key){
-    return key + ' - ' + actions[key]  
+    return key + ' - ' + actions[key];
   }))
 });
 

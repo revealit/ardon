@@ -9,15 +9,9 @@
  */
 "use strict";
 
-// Construct the main Ardon object from its parts.
-// The parts in the object literals do not require configuration, so
-// they can be required directly with no fuss.
 var Ardon = module.exports = {
-  app: require('./lib/app'),
-  configuration: require('./lib/configuration')
+  configuration: require('./lib/configuration'),
+  db: require('./lib/db'),
+  server: require('./lib/server')
 };
-
-// The database needs the configuration to be loaded for correct
-// initialisation of database connections, etc.
-Ardon.db = require('./lib/db')(Ardon.configuration);
 
